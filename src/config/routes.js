@@ -9,8 +9,7 @@ module.exports = (app) => {
 
   // Setup error handling
   app.get('*', (req, res, next) => {
-    const message = `Not Found ${req.method} on ${req.originalUrl}`;
-    next(ApiError.notFound(message));
+    next(ApiError.notFound(`Couldn't find ${req.originalUrl}`));
   });
 
   app.use(apiErrorMiddleware);
