@@ -5,6 +5,6 @@ exports.apiErrorMiddleware = (err, req, res, next) => {
     return res.status(err.code).send(err);
   }
 
-  console.error(err);
+  console.error(`\n\n------ INTERNAL SERVER ERROR ------\n${err}\n\n`);
   this.apiErrorMiddleware(ApiError.internal(), req, res, next);
 };
