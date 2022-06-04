@@ -4,9 +4,9 @@
   "description": "This is my personal PostBlog Fullstack Project",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development node ./src/server/index.js",
-    "start:dev": "NODE_ENV=development nodemon ./src/server/index.js",
-    "start:prod": "NODE_ENV=production node ./src/server/index.js"
+    "start": "NODE_ENV=development node ./src/index.js",
+    "start:dev": "NODE_ENV=development nodemon ./src/index.js",
+    "start:prod": "NODE_ENV=production node ./src/index.js"
   },
   "repository": {
     "type": "git",
