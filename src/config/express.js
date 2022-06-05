@@ -12,6 +12,7 @@ module.exports = (app, express) => {
   // Setup body parser
   app.use(express.urlencoded({ extended: true }));
 
+  // Use request logger only if the app is not in production
   if (process.env.NODE_ENV != 'production') {
     app.use(require('morgan')('tiny'));
   }
