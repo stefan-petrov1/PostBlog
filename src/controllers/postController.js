@@ -1,4 +1,6 @@
+const { ApiError } = require("../config/errors/ApiError");
 const { postService } = require("../services/postService");
+const { ValidationError } = require('mongoose').Error;
 
 function renderCreate(req, res, next) {
   res.render('createPost');
@@ -15,6 +17,10 @@ async function create(req, res, next) {
 
     res.redirect('/');
   } catch (err) {
+    if (err instanceof ValidationError) {
+      return next(ApiError.badRequest(err.message));
+    }
+
     next(err);
   }
 }
