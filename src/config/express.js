@@ -11,4 +11,8 @@ module.exports = (app, express) => {
 
   // Setup body parser
   app.use(express.urlencoded({ extended: true }));
+
+  if (process.env.NODE_ENV != 'production') {
+    app.use(require('morgan')('tiny'));
+  }
 };

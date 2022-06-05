@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/stefan-petrov1/PostBlog#readme",
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.16"
   },
   "dependencies": {

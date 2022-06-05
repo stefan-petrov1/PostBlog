@@ -8,13 +8,11 @@ const app = express();
 require('./config/express')(app, express);
 require('./config/routes')(app);
 
-app.get('/', (req, res) => res.send('Running'));
-
 async function main() {
   await initializeDb(config.DB_URI);
   app.listen(config.PORT);
 
-  return `Server is running on port ${config.PORT}...`;
+  return `Server is running on port ${config.PORT}...\n`;
 }
 
 main()
