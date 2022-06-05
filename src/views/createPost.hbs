@@ -1,0 +1,34 @@
+<div class='container'>
+  <h2 class='text-center mt-4 mb-5'>Create Post</h2>
+
+  <form>
+    <div class='form-floating mb-4'>
+      <input
+        type='text'
+        id='title'
+        name='title'
+        class='form-control'
+        placeholder='ExampleTitle'
+      />
+      <label for='title' class='form-label'>
+        Post Title
+      </label>
+    </div>
+
+    <div class='form-floating mb-4'>
+      <textarea
+        class='form-control'
+        placeholder='Post description here'
+        id='description'
+        style='height: 90px;'
+      ></textarea>
+      <label for='description'>Post Description</label>
+    </div>
+
+    <div class='d-grid gap-2'>
+      <button class='btn btn-primary' type='submit'>
+        Create Post
+      </button>
+    </div>
+  </form>
+</div>

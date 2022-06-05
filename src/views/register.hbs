@@ -1,50 +1,49 @@
 <div class='container'>
-  <form>
-    <div class='form-group'>
-      <br />
-      <h2 class='text-center'>Register</h2>
+  <h2 class='text-center mt-4 mb-5'>Register Page</h2>
 
-      <label htmlFor='username' class='form-label'>
-        Username
-      </label>
+  <form>
+    <div class='form-floating mb-4'>
       <input
         type='text'
         id='username'
         name='username'
         class='form-control'
-        placeholder='Enter an username'
+        placeholder='Example-Username123'
       />
-
-      <br />
-
-      <label htmlFor='email' class='form-label'>
-        Email
+      <label for='username' class='form-label'>
+        Username
       </label>
+    </div>
+
+    <div class='form-floating mb-4'>
       <input
-        type='text'
+        type='email'
         id='email'
         name='email'
         class='form-control'
-        placeholder='Enter an email'
+        placeholder='example@example.com'
       />
-
-      <br />
-
-      <label htmlFor='password' class='form-label'>
-        Password
+      <label for='email' class='form-label'>
+        Email Address
       </label>
+    </div>
+
+    <div class='form-floating mb-4'>
       <input
         type='password'
         id='password'
         name='password'
         class='form-control'
-        placeholder='Enter a password'
+        placeholder='?EexamplePassword123!#'
       />
+      <label for='password' class='form-label'>
+        Password
+      </label>
     </div>
-    <br />
-    <div class='d-flex justify-content-center'>
+
+    <div class='d-grid gap-2'>
       <button class='btn btn-primary' type='submit'>
-        Login
+        Register
       </button>
     </div>
   </form>

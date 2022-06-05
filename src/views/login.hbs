@@ -1,23 +1,21 @@
 <div class='container'>
-    <div class='form-group'>
-      <br />
+  <h2 class='text-center mt-4 mb-5'>Login Page</h2>
 
-      <h2 class='text-center'>Login</h2>
-      <label htmlFor='email' class='form-label'>
-        Email
-      </label>
+  <form>
+    <div class='form-floating mb-4'>
       <input
-        type='text'
+        type='email'
         id='email'
         name='email'
         class='form-control'
-        placeholder='Enter an email'
+        placeholder='example@example.com'
       />
-      <br />
-
-      <label htmlFor='password' class='form-label'>
-        Password
+      <label for='email' class='form-label'>
+        Email Address
       </label>
+    </div>
+
+    <div class='form-floating mb-4'>
       <input
         type='password'
         id='password'
@@ -25,13 +23,13 @@
         class='form-control'
         placeholder='Enter a password'
       />
+      <label for='password' class='form-label'>
+        Password
+      </label>
     </div>
-    <br />
-    <div class='d-flex justify-content-center'>
-      <button
-        class='btn btn-primary'
-        type='submit'
-      >
+
+    <div class='d-grid gap-2'>
+      <button class='btn btn-primary' type='submit'>
         Login
       </button>
     </div>
