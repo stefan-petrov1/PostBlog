@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
     maxlength: [20, '{VALUE} must be below or equal 20 characters.'],
   },
   email: { required: true, type: String },
-  posts: [{ required: true, type: mongoose.Types.ObjectId, ref: 'Post' }]
+  posts: [{ required: false, type: mongoose.Types.ObjectId, ref: 'Post' }]
 });
 
 userSchema.path('posts').validate(function (postArr) {

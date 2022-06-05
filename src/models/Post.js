@@ -13,7 +13,7 @@ const postSchema = new mongoose.Schema({
     minlength: [10, '{VALUE} must be at least 10 characters.'],
     maxlength: [500, '{VALUE} mustn\'t be more than 500 characters.']
   },
-  author: { required: true, type: mongoose.Types.ObjectId, ref: 'User' }
+  authorId: { required: true, type: mongoose.Types.ObjectId, ref: 'User' }
 });
 
 const Post = mongoose.model('Post', postSchema);
